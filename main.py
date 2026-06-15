@@ -65,7 +65,7 @@ def main():
 
 def generate_content(client, messages):
     response = client.models.generate_content(
-        model="gemini-2.5-flash-lite",
+        model="gemini-2.5-flash",
         contents=messages,
         config=types.GenerateContentConfig(
             tools=[available_functions],
